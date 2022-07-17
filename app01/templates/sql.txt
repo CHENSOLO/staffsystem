@@ -1,0 +1,14 @@
+insert into app01_userinfo(name,password,age,account,create_time,gender,depart_id) values("邓莹珊","000ooo","31","1999","20180825",2,5);
+insert into app01_userinfo(name,password,age,account,create_time,gender,depart_id) values("彭丹妮","0213","29","20020","20190529",1,1);
+insert into app01_userinfo(name,password,age,account,create_time,gender,depart_id) values("卓静纯","sioda","26","898","20190302",2,4);
+insert into app01_prettynum(mobile,price,level,status) values("13528427011","9999","5","1");
+insert into app01_admin(username,password) values("陈靓仔","root");
+       migrations.CreateModel(
+            name='Admin',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('username', models.CharField(max_length=32, verbose_name='用户名')),
+                ('password', models.CharField(max_length=64, verbose_name='密码')),
+                ('confirm_password', models.CharField(default='', max_length=64, verbose_name='确认密码')),
+            ],
+        ),
